@@ -1,0 +1,85 @@
+# Ignore compiled Python files and bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment files
+venv/
+env/
+*.env
+
+# Ignore database files
+db.sqlite3
+
+# Ignore logs and debug files
+*.log
+*.log.*
+*.log-*
+*.lck
+
+# Ignore Node.js dependencies and build output
+node_modules/
+build/
+
+# Ignore IDE and text editor-specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.suo
+*.user
+*.sln
+*.tmp
+*.swp
+
+# Ignore compiled JavaScript files
+*.js
+*.js.map
+
+# Ignore runtime data, test coverage, and production build files
+coverage/
+dist/
+*.pyc
+*.egg-info/
+*.egg/
+node_modules/
+npm-debug.log
+yarn-error.log
+npm-debug.log.*
+yarn-error.log.*
+
+# Ignore local environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore environment variables configuration files
+.env*
+
+# Ignore package-lock files (npm)
+package-lock.json
+
+# Ignore yarn lock files
+yarn.lock
+
+# Ignore macOS-specific files
+.DS_Store
+
+# Ignore backup and temporary files
+*~
+\#*\#
+*.bak
+*.swp
+
+# Ignore database migration files (Django)
+*/migrations/
+
+# Ignore .gitignore file itself
+/.gitignore
+
+# Ignore compiled TypeScript files
+*.ts
+*.tsx
+*.js
+*.jsx
