@@ -55,7 +55,7 @@ yarn-error.log.*
 .env.production.local
 
 # Ignore environment variables configuration files
-.env*
+website/.env
 
 # Ignore package-lock files (npm)
 package-lock.json
