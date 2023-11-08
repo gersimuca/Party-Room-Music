@@ -22,7 +22,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 ENGINE = os.getenv('ENGINE')
 NAME = os.getenv('NAME')
 USER = os.getenv('USER')
-PASSWORD = os.getenv("PASSWORD")
+PASSWORD = os.getenv('PASSWORD')
 HOST = os.getenv('HOST')
 PORT = os.getenv('PORT')
 
@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api.apps.ApiConfig',
     'rest_framework',
-    'frontend.apps.FrontendConfig'
+    'client.apps.ClientConfig'
 ]
 
 MIDDLEWARE = [

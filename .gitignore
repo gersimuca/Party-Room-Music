@@ -32,10 +32,6 @@ build/
 *.tmp
 *.swp
 
-# Ignore compiled JavaScript files
-*.js
-*.js.map
-
 # Ignore runtime data, test coverage, and production build files
 coverage/
 dist/
@@ -77,9 +73,3 @@ yarn.lock
 
 # Ignore .gitignore file itself
 /.gitignore
-
-# Ignore compiled TypeScript files
-*.ts
-*.tsx
-*.js
-*.jsx
