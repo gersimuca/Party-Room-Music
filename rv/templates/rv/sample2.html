@@ -1,0 +1,21 @@
+//Example 2 - TemplateView within view.py
+<hr />
+<a href="{% url 'rv:go-to-aol-mail' %}">AOL News</a>
+<hr />
+{{ data }}
+<hr />
+
+<div>
+    <p>
+        Language used {{ posts.name }}, and count
+        {% if posts.count is None %}
+            0
+        {% else %}
+            {{ posts.count }}
+        {% endif %}
+    </p>
+</div>
+
+<hr />
+<a href="{% url 'rv:redirect-task' pk=posts.id %}">{{ posts.name }}</a>
+

@@ -54,7 +54,10 @@ INSTALLED_APPS = [
     'api.apps.ApiConfig',
     'rest_framework',
     'client.apps.ClientConfig',
-    'template_view'
+    'rv',
+    # 'tv',
+    'dv',
+
 ]
 
 MIDDLEWARE = [
