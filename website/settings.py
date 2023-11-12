@@ -57,7 +57,9 @@ INSTALLED_APPS = [
     'template_view',
     'redirect_view',
     'detail_view',
-    'list_view'
+    'list_view',
+    'form_view',
+    'create_view'
 ]
 
 MIDDLEWARE = [

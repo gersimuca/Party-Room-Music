@@ -24,5 +24,7 @@ urlpatterns = [
     path('t/', include('template_view.urls', namespace='template_view')),
     path('r/', include('redirect_view.urls', namespace='redirect_view')),
     path('d/books/', include('detail_view.urls', namespace='books')),
-    path('l/books/', include('list_view.urls', namespace='books'))
+    path('l/books/', include('list_view.urls', namespace='books')),
+    path('f/books/', include('form_view.urls', namespace='books')),
+    path('c/books/', include('create_view.urls', namespace='books')),
 ]
