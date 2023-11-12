@@ -59,7 +59,8 @@ INSTALLED_APPS = [
     'detail_view',
     'list_view',
     'form_view',
-    'create_view'
+    'create_view',
+    'update_view',
 ]
 
 MIDDLEWARE = [

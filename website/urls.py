@@ -27,4 +27,5 @@ urlpatterns = [
     path('l/books/', include('list_view.urls', namespace='books')),
     path('f/books/', include('form_view.urls', namespace='books')),
     path('c/books/', include('create_view.urls', namespace='books')),
+    path('u/books/', include('update_view.urls', namespace='home')),
 ]
