@@ -51,13 +51,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'api.apps.ApiConfig',
     'rest_framework',
+    'api.apps.ApiConfig',
     'client.apps.ClientConfig',
-    'rv',
-    # 'tv',
-    'dv',
-
+    'template_view',
+    'redirect_view',
+    'detail_view',
+    'list_view'
 ]
 
 MIDDLEWARE = [

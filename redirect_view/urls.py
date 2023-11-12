@@ -1,12 +1,12 @@
 from django.urls import path
 from django.views.generic import TemplateView, RedirectView
-from rv.views import Sample2View, PostPreLoadTaskView, SinglePostView
+from redirect_view.views import Sample2View, PostPreLoadTaskView, SinglePostView
 
-app_name = 'rv'
+app_name = 'redirect'
 
 urlpatterns = [
     # extra_context Attribute from ContentMixin - keyword argument for as_view()
-    path('', TemplateView.as_view(template_name="rv/sample1.html",
+    path('', TemplateView.as_view(template_name="redirect_view/sample1.html",
                                   extra_context={
                                       'title': 'Custom Title or Testing TemplateView',
                                       'name': 'Gersi Muca'}

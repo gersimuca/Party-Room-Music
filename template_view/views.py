@@ -1,9 +1,9 @@
 from django.views.generic.base import TemplateView
-from tv.models import PostTV
+from template_view.models import PostTV
 
 
 class Sample2View(TemplateView):
-    template_name = "tv/sample2.html"
+    template_name = "template_view/sample2.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

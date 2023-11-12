@@ -21,7 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
     path('', include('client.urls')),
-    path('rv/', include('rv.urls', namespace='rv')),
-    # path('tv/', include('tv.urls', namespace='tv')),
-    path('dv/books/', include('dv.urls', namespace='books'))
+    path('t/', include('template_view.urls', namespace='template_view')),
+    path('r/', include('redirect_view.urls', namespace='redirect_view')),
+    path('d/books/', include('detail_view.urls', namespace='books')),
+    path('l/books/', include('list_view.urls', namespace='books'))
 ]

@@ -5,7 +5,7 @@ from django.db import models
 from django.db import models
 
 
-class Books(models.Model):
+class BooksDV(models.Model):
     # Example model only
     title = models.CharField(max_length=100)
     slug = models.SlugField(null=True)

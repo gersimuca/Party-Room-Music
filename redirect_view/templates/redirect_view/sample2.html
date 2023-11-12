@@ -1,6 +1,6 @@
 //Example 2 - TemplateView within view.py
 <hr />
-<a href="{% url 'rv:go-to-aol-mail' %}">AOL News</a>
+<a href="{% url 'redirect:go-to-aol-mail' %}">AOL News</a>
 <hr />
 {{ data }}
 <hr />
@@ -17,5 +17,5 @@
 </div>
 
 <hr />
-<a href="{% url 'rv:redirect-task' pk=posts.id %}">{{ posts.name }}</a>
+<a href="{% url 'redirect:redirect-task' pk=posts.id %}">{{ posts.name }}</a>
 

@@ -1,12 +1,11 @@
 from django.views.generic.base import TemplateView, RedirectView
-from rv.models import PostRV
+from redirect_view.models import PostRV
 from django.shortcuts import get_object_or_404
 from django.db.models import F
 
 
 class Sample2View(TemplateView):
-
-    template_name = "rv/sample2.html"
+    template_name = "redirect_view/sample2.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -16,9 +15,9 @@ class Sample2View(TemplateView):
 
 
 class PostPreLoadTaskView(RedirectView):
-
     # url = 'http://youtube.com/veryacademy'
-    pattern_name = 'rv:singlepost'
+    pattern_name = 'redirect:singlepost'
+
     # permanent = HTTP status code returned (True = 301, False = 302, Default = False)
 
     def get_redirect_url(self, *args, **kwargs):
@@ -33,8 +32,7 @@ class PostPreLoadTaskView(RedirectView):
 
 
 class SinglePostView(TemplateView):
-
-    template_name = "rv/sample4.html"  # single.html
+    template_name = "redirect_view/sample4.html"  # single.html
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

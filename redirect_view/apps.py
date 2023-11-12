@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class TvConfig(AppConfig):
+class RvConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'rv'
+    name = 'redirect_view'
